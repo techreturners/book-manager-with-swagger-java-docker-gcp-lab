@@ -71,7 +71,7 @@ The file it copies is a **JAR** file located in the target directory. The JAR fi
 
 It stands for **J**ava **AR**chive.
 
-Then the final line is the powerful one. An `ENTRYPOINT` instruction tells Docker what command should be when to start the application.
+Then the final line is the powerful one. An `ENTRYPOINT` instruction tells Docker what command should be executed when starting the container.
 
 ```dockerfile
 ENTRYPOINT ["java","-jar","/app.jar"]
