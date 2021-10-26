@@ -6,9 +6,9 @@
 
 In order to build and run Docker containers we'll need to install Docker.
 
-Thankfully Docker provide installers for various operating machines
+Thankfully Docker provide installers for various operating systems.
 
-Head over to their website and install **Docker Desktop** on to your computer
+Head over to their website and install **Docker Desktop** on to your computer.
 
 **NOTE:** You DO NOT have to pay or sign up for any paid subscription to complete this lab. 
 
@@ -16,9 +16,9 @@ https://www.docker.com/get-started
 
 ## 💻 Exercise 2.2 - Validating installation
 
-Once you have successfully installed Docker Desktop you should be able to run docker images from the terminal
+Once you have successfully installed Docker Desktop you should be able to run various docker commands from the terminal
 
-Have a go now and see if you can see you docker version by running the `docker --version` command.
+Have a go now and see if you can see your docker version by running the `docker --version` command.
 
 You should see something similar to:
 
@@ -30,7 +30,7 @@ Docker version 20.10.6, build 370c289
 
 ## 🎨 Exercise 2.3 - Build your application
 
-Before you dive into docker we need to build the Java application.
+Before you dive into docker, we need to build the Java application.
 
 We can use **Maven** to do this.
 
@@ -43,8 +43,6 @@ mvn package
 You'll see Maven build the application and it will create a JAR file in the **target** directory.
 
 ## 🎨 Exercise 2.4 - Reviewing images
-
-You can now utilise docker commands
 
 Let's have a look at the docker images you have on your computer.
 
@@ -62,15 +60,15 @@ REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
 
 ## 🧰 Exercise 2.5 - Building your image
 
-Now the exciting part, lets build your first docker image.
+Now the exciting part, let's build your first docker image.
 
-Make sure you are in the root of your project (essentially where the Dockerfile is located) and run the following command:
+Make sure you are in the root of your project (essentially where the **Dockerfile** is located) and run the following command:
 
 ```
 docker build -t book-manager-api:1.0 .
 ```
 
-You should Docker start to build your image. It might take a few minutes whilst it pulls down (downloads) the base images required.
+You should see Docker start to build your image. It might take a few minutes whilst it pulls down (downloads) the base images required.
 
 Now try the `docker images` command again. Let's see if the image is there. You should see something similar to:
 
@@ -89,7 +87,7 @@ The docker tool allows you to build containers and also run them.
 
 To run your docker container, run the following command:
 
-**NOTE:** If you changed **book-manager-api:1.0** part of the build command (step 2.4) then you'll need to update the command below:
+**NOTE:** If you changed the **book-manager-api:1.0** part of the build command (step 2.5) then you'll need to update the command below:
 
 ```
 docker run -p 8080:8080 book-manager-api:1.0
