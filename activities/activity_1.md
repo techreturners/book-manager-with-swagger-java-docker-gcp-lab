@@ -79,6 +79,6 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 
 Essentially this says, when the docker container runs please run the command `java -jar /app.jar`. Just like you might do on your local computer.
 
-Now we've had a bit of an explore, I expect you're excited to get try building a docker image and getting it running.
+Now we've had a bit of an explore, I expect you're excited to get build a docker image and getting it running.
 
 Head over to [Activity 2](./activity_2.md) and we can get things built and running.
