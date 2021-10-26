@@ -39,13 +39,15 @@ Java Development Kit is present.
 
 Wait....hold up....in the answer you mentioned the [Docker Hub](https://hub.docker.com). What is the Docker Hub?!
 
-The Docker hub is a public site where you can publish Docker images. You can make them publicly for the community to use.
+The Docker hub is a public site where you can publish Docker images. You can make them publicly available for the community to use.
 
 Very similar to the Java dependencies you've got in your code. Those Java dependencies get pulled from the Maven Central servers. 
 
 Well in Docker that image (`amazoncorretto:11-alpine3.14-jdk`) we've "based" our Dockerfile from gets "pulled" from the Docker Hub.
 
-The following two lines:
+In container talk, the Docker Hub is known as a **Container Registry** but more on that later...
+
+Moving on to the following two lines:
 
 ```dockerfile
 RUN addgroup -S spring && adduser -S spring -G spring
@@ -79,4 +81,4 @@ Essentially this says, when the docker container runs please run the command `ja
 
 Now we've had a bit of an explore, I expect you're excited to get try building a docker image and getting it running.
 
-Head over to [Activity 2](./activities/activity_2.md) and we can get things built and running.
+Head over to [Activity 2](./activity_2.md) and we can get things built and running.
