@@ -1,34 +1,23 @@
-# 📖 Minimalist Book Manager API
+# Building and Deploying a Java application with Docker
 
 ## Introduction
-This is a starter repository for the Minimalist Book Manager API demonstrating basic use of SpringFox and SpringFox Swagger UI
-to produce Swagger API documentation.
+This repository is designed to guide you through containerising a Spring boot application using [Docker](https://www.docker.com/).
+
+It also covers instructions for deploying your containerised application to Amazon Web Services.
+
+The application itself is a sample Java Spring book manager API that allows users to manage books.
+
+If you have created your own Java Spring API, the instructions here can also be utilised to containerise and deploy your own application 🙌
 
 ### Pre-Requisites
 - Java SE Development Kit 11
 - Maven
 
-### Technologies & Dependencies
-- Spring Boot
-- Spring Web
-- SpringFox
-- springfox-swagger-ui
-- H2 Database
-- mysql-connector-java
-- Lombok
-- Spring Data JPA
+For deployment you'll also need:
 
-### How to Get Started
-- Fork this repo to your Github and then clone the forked version of this repo
+- An Amazon AWS account
 
-### Main Entry Point
-- The Main Entry Point for the application is: [BookmanagerApplication.java](src/main/java/com/techreturners/bookmanager/BookmanagerApplication.java)
+## How to Get Started
 
-### Running the Unit Tests
-- You can run the unit tests in IntelliJ, or you can go to your terminal and inside the root of this directory, run:
-
-`mvn test`
-
-### Externalising Configuration - application.properties and Spring Profiles
-
-- An example structure for Spring Profiles can be viewed in the [resources directory](src/main/resources).
+1. Fork this repo to your Github and then clone the forked version of this repo
+2. Work through the activities in the activities folder starting with [Activity 1](./activities/activity_1.md).
