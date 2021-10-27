@@ -28,6 +28,8 @@ Have a watch of this video in order to terminate the application.
 
 [Terminating your application](./terminating_elastic_beanstalk.mp4)
 
+If you're interested in an extension, then try [exercise 4](./activity_4.md) and pointing your application to your real database.
+
 
 
 
