@@ -90,4 +90,6 @@ Essentially this says, when the docker container runs please run the command `ja
 
 Now we've had a bit of an explore, I expect you're excited to get building a docker image and getting it running.
 
+===
+
 Head over to [Activity 2](./activity_2.md) and we can get things built and running.

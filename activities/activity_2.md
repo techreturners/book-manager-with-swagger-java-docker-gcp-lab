@@ -128,6 +128,8 @@ We can now stop the container.
 
 To stop your container you can use the **Ctrl + C** combination and it will stop.
 
+===
+
 Head over to [Activity 3](./activity_3.md) and we look into deploying your container.
 
 
