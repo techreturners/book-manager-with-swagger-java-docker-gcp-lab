@@ -16,6 +16,7 @@ RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 ARG JAR_FILE=target/*.jar
 COPY ${JAR_FILE} app.jar
+EXPOSE 8080
 ENTRYPOINT ["java","-jar","/app.jar"]
 ```
 - What do you think might be happening in the first line of that Dockerfile?
@@ -70,6 +71,14 @@ COPY ${JAR_FILE} app.jar
 The file it copies is a **JAR** file located in the target directory. The JAR file is what is produced when you build your Spring boot application.
 
 It stands for **J**ava **AR**chive.
+
+Then we encounter the port exposure.
+
+```dockerfile
+EXPOSE 8080
+```
+
+This line tells Docker that our application will be listening for connections on port 8080. Thats the default port for a Java spring boot application.
 
 Then the final line is the powerful one. An `ENTRYPOINT` instruction tells Docker what command should be executed when starting the container.
 
