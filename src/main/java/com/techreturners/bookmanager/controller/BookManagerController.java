@@ -2,6 +2,7 @@ package com.techreturners.bookmanager.controller;
 
 import com.techreturners.bookmanager.model.Book;
 import com.techreturners.bookmanager.service.BookManagerService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -14,11 +15,8 @@ import java.util.List;
 @RequestMapping("/api/v1/book")
 public class BookManagerController {
 
+    @Autowired
     BookManagerService bookManagerService;
-
-    public BookManagerController(BookManagerService bookManagerService) {
-        this.bookManagerService = bookManagerService;
-    }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Book>> getAllBooks() {
