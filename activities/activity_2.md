@@ -25,7 +25,7 @@ You should see something similar to:
 ```
 docker --version
 
-Docker version 20.10.6, build 370c289
+Docker version 20.10.11, build dea9396
 ```
 
 ## 🎨 Exercise 2.3 - Build your application

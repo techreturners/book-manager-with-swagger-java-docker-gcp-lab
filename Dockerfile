@@ -1,4 +1,4 @@
-FROM amazoncorretto:11-alpine3.14-jdk
+FROM amazoncorretto:17-alpine3.17-jdk
 RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 ARG JAR_FILE=target/*.jar

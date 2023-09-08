@@ -11,7 +11,7 @@ However, there is one new file to point out and that is the [Dockerfile](../Dock
 The Dockerfile looks like this:
 
 ```dockerfile
-FROM amazoncorretto:11-alpine3.14-jdk
+FROM amazoncorretto:17-alpine3.17-jdk
 RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 ARG JAR_FILE=target/*.jar
@@ -32,7 +32,7 @@ We can create Docker images that build upon previous layers.
 The first line of this particular Dockerfile tells Docker build 
 on a Java image provided on the [DockerHub](https://hub.docker.com/_/amazoncorretto) by Amazon.
 
-That particular image makes sure the version 11 of the 
+That particular image makes sure the version 17 of the 
 Java Development Kit is present.
 
 </pre>
@@ -44,7 +44,7 @@ The Docker hub is a public site where you can publish Docker images. You can mak
 
 Very similar to the Java dependencies you've got in your code. Those Java dependencies get pulled from the Maven Central servers. 
 
-Well in Docker that image (`amazoncorretto:11-alpine3.14-jdk`) we've "based" our Dockerfile from gets "pulled" from the Docker Hub.
+Well in Docker that image (`amazoncorretto:17-alpine3.17-jdk`) we've "based" our Dockerfile from gets "pulled" from the Docker Hub.
 
 In container talk, the Docker Hub is known as a **Container Registry** but more on that later...
 
