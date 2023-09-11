@@ -12,6 +12,7 @@ If you have created your own Java Spring API, the instructions here can also be 
 ### Pre-Requisites
 - Java SE Development Kit 17
 - Maven
+- gcloud CLI
 
 For deployment you'll also need:
 
